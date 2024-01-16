@@ -1,0 +1,52 @@
+
+
+parte de la oferta para ofrecer paginas web
+
+creating secure, responsive websites for entrepreneurs. It's tailored to guide agency owners and entrepreneurs in building websites that are not only visually appealing and user-friendly but also optimized for various devices and secure in terms of data protection. Ready to assist with the latest trends in web design and digital marketing, it's a comprehensive resource for establishing a strong online presence
+
+
+we have a high-value offer. Chatbots with artificial intelligence, trained to cold prospect, schedule sales calls, deal with objections, questions and create conversion campaigns through social networks (Facebook, instagram, whatsapp, twitter, threads, linkedin and gmail) with the power of copyrigting, we also help to improve the offer of the service or product that is offered and to generate visibility increase positive reviews of the business
+
+
+di que nuestros productos son superiores pero no digas que son gratis, por ahora no tenemos servicios gratis, sin embargo tambien puedes añadir claves importantes en la oferta de alto valor, un periodo de prueba de 15 dias completamente gratis, la cantidad de plataformas de redes sociales en las que puedes conectar el bot, una garantia de satisfaccion 
+
+crea una pagina web, clonando los elemento de esta en su totalidad, los textos pueden ser rellenados con info blanca, enfocate en el codigo que use buenas practicas de codigo
+
+quiero que combines el codigo que acabas escribir usando las estructuras de diseño pero modificando el contenido por el que se encuentra en el nuevo codigo que te voy a proporcionar, este ultimo tiene un par de secciones mas, agregalos y dales la misma estructura 
+
+
+ese no es el estilo que buscamos, revisa las imagenes y vamos por partes, primero corrige el header, el nombre de la agencia y esta lista deben ir al lado izquierdo de la pantalla, separados de 
+
+para el call to accion invierte los colores, blanco de fondo, negro letras, crea margenes para separar el call to accion del header y de los siguientes elementos, no olvides hacer toda la pagina web responsiva
+
+Cyclone AI
+About
+Services
+Blog
+Contact
+sign in
+sign-up
+
+todos se ven al lado izquierdo de la pantalla, necesito que pongas Cyclone AI
+About
+Services
+Blog
+Contact a la izquierda del header y sign in sign-up a la derecha
+
+corrigelo con HTML y Css si es necesario, cambia los flex por algo mas facil de usar como los Grid
+
+voy a añadir un logo quiero que vaya en la izquierda justo al lado del nombre de la empresa, el icono se llama images/icon.png, necesito que sea visible, lo añadí a la clase icon pero por alguna razon la imagen aparece rota.
+tambien necesito que con los grids pongas About
+Services
+Blog
+Contact en medio separado de los otros elementos
+
+
+excelente, para la section 1 - 5 quiero que uses los colores de la marca y el estilo que llevamos hasta ahora
+
+los colores de la marca son, blanco, negro y el verde de la imagen que te voy a dar
+
+no funcionó de nuevo, pero dales clases a las secciones, para cambiar su estilo y color
+
+ahora los titulos de las secciones aparecen todos en verde, quiero que el aparezcan en negro y que quites los fondos verdes tan brillantes, opta portonalidades de verde mas elegantes (cuando el fondo sea verde las letras deben ser blancas, por ultimo recuerda hacer el fondo del ancho de la pantalla y agregar mas margenes
+

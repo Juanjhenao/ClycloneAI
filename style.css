@@ -1,0 +1,392 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000; /* Dark background */
+    color: #fff; /* White text color for contrast */
+    line-height: 1.6;
+    width: 100%; /* Ensure full width */
+    height: 100%; /* Ensure full height */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+header {
+    background-color: #000000; /* Very dark grey for header */
+    padding: 20px 0;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo-branding {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and branding */
+}
+
+.logo {
+    width: 60px; /* Example size, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#branding h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px; /* Space between navigation items */
+    justify-content: center; /* Center the navigation items */
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-links {
+    display: flex;
+    gap: 20px; /* Space between auth links */
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #00c4ff;
+    font-size: 1rem;
+}
+
+.auth-links .btn-sign-up {
+    border: 2px solid #00c4ff;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px; /* Space between stacked items */
+        text-align: center;
+    }
+
+    .logo-branding, .main-nav, .auth-links {
+        justify-content: center;
+    }
+
+    .main-nav ul {
+        grid-auto-flow: row;
+        gap: 10px;
+    }
+}
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex; /* Display list items in a row */
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+    margin-right: 30px; /* Space between the menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+nav ul li.current a,
+nav ul li a:hover {
+    color: #00c4ff; /* Highlight color for the current item or on hover */
+}
+
+/* Auth links styles */
+.auth-links {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #00c4ff; /* Cyan color for auth links */
+    margin-left: 20px; /* Space between the auth links */
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.auth-links .btn-sign-up {
+    border: 1px solid #00c4ff; /* Cyan border for the sign-up button */
+    padding: 8px 20px; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners for the button */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Stack the items on smaller screens */
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: center; /* Center the navigation items */
+    }
+
+    .auth-links {
+        margin-top: 10px;
+        justify-content: center; /* Center the auth links */
+    }
+}
+
+.cta {
+    background-color: #fff; /* White background for CTA */
+    color: #000; /* Black text for CTA */
+    padding:90px 20px;
+    text-align: center;
+    position: relative; /* Position relative for full width */
+    width: 100vw; /* Full viewport width */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw; /* Offset to the left by half of viewport width */
+    margin-right: -50vw; /* Offset to the right by half of viewport width */
+    box-sizing: content-box;
+
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 992px) { /* Adjust breakpoint as needed */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta {
+        margin-top: 20px; /* Add some space between the header and CTA on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-links a {
+        margin: 10px 0;
+    }
+}
+/* Brand Colors */
+:root {
+    --elegant-green: #83ff52; /* Placeholder for an elegant shade of green */
+    --brand-black: #000;
+    --brand-white: #fff;
+}
+
+/* Base styles for all sections */
+.section {
+    padding: 80px 20px; /* Increased padding for more space */
+    text-align: center;
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Centering the section */
+}
+
+/* Individual section styles */
+.section-one,
+.section-three,
+.section-five {
+    background-color: var(--brand-black);
+    color: var(--brand-white); /* White text for better contrast */
+}
+
+.section-two,
+.section-four {
+    background-color: var(--elegant-green);
+    color: var(--brand-white); /* White text for better contrast */
+}
+
+/* Section Titles */
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.section-one h2,
+.section-three h2,
+.section-five h2 {
+    color: var(--brand-white); /* White color for titles on black background */
+}
+
+.section-two h2,
+.section-four h2 {
+    color: var(--brand-black); /* Black color for titles on green background */
+}
+
+/* Section Text */
+.section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 800px; /* Max width for content readability */
+    margin-left: auto; /* Centering the paragraph */
+    margin-right: auto;
+}
+
+/* Responsive Design for Sections */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .section p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pricing Section Styles */
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+    background-color: #000000; /* Dark background for contrast */
+}
+
+.card {
+    background: #1a1a1a; /* Dark card background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners for the cards */
+    text-align: center; /* Center align text in cards */
+}
+
+.card h2 {
+    margin-bottom: 10px; /* Space below card title */
+}
+
+.card .price {
+    font-size: 24px;
+    color: #00c4ff; /* Cyan color for price */
+    margin: 20px 0;
+}
+
+.card button {
+    background: #00c4ff; /* Cyan background for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Rounded corners for buttons */
+    cursor: pointer;
+}
+
+/* Articles Section Styles */
+.articles {
+    padding: 40px 0;
+    background-color: #181818; /* Slightly lighter dark background */
+}
+
+.article-card {
+    background: #1a1a1a; /* Dark card background */
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px; /* Space between articles */
+    border-radius: 8px; /* Slightly rounded corners for the cards */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0f0f0f; /* Very dark grey for footer */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Center align text in footer */
+}
+
+.footer-content {
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 10px; /* Space above the copyright text */
+}
+
+/* Responsive Design for Pricing and Articles Sections */
+@media (max-width: 768px) {
+    .pricing, .articles {
+        grid-template-columns: 1fr; /* Stack the cards on smaller screens */
+    }
+}
+
+/* Articles Section Styles */
+.articles, .features {
+    padding: 40px 0;
+}
+
+.article-card, .feature {
+    background: #1a1a1a; /* Card background */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media(max-width: 700px) {
+    header nav, .container, header .cta, .pricing, .articles, .features {
+        width: 90%;
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul, .auth-links a {
+        float: none;
+        margin-top: 5px;
+    }
+
+    .card, .article-card, .feature {
+        flex-direction: column;
+    }
+
+    .pricing, .articles, .features {
+        flex-direction: column;
+    }
+}
