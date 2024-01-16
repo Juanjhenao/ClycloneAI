@@ -74,12 +74,12 @@ header {
 
 .auth-links a {
     text-decoration: none;
-    color: #00c4ff;
+    color: #0bf711;
     font-size: 1rem;
 }
 
 .auth-links .btn-sign-up {
-    border: 2px solid #00c4ff;
+    border: 2px solid #0bf711;
     padding: 5px 15px;
     border-radius: 20px;
 }
@@ -122,7 +122,7 @@ nav ul li a {
 
 nav ul li.current a,
 nav ul li a:hover {
-    color: #00c4ff; /* Highlight color for the current item or on hover */
+    color: var(--elegant-green); 
 }
 
 /* Auth links styles */
@@ -133,14 +133,14 @@ nav ul li a:hover {
 
 .auth-links a {
     text-decoration: none;
-    color: #00c4ff; /* Cyan color for auth links */
+    color: var(--elegant-green); 
     margin-left: 20px; /* Space between the auth links */
     font-size: 0.9em;
     font-weight: 500;
 }
 
 .auth-links .btn-sign-up {
-    border: 1px solid #00c4ff; /* Cyan border for the sign-up button */
+    border: 1px solid --elegant-green;
     padding: 8px 20px; /* Padding inside the button */
     border-radius: 20px; /* Rounded corners for the button */
 }
@@ -209,7 +209,8 @@ nav ul li a:hover {
 }
 /* Brand Colors */
 :root {
-    --elegant-green: #83ff52; /* Placeholder for an elegant shade of green */
+    --green-background-color: #54f958;
+    --elegant-green: #0bf711;
     --brand-black: #000;
     --brand-white: #fff;
 }
@@ -232,8 +233,8 @@ nav ul li a:hover {
 
 .section-two,
 .section-four {
-    background-color: var(--elegant-green);
-    color: var(--brand-white); /* White text for better contrast */
+    background-color: var(--green-background-color);
+    color: var(--brand-black); 
 }
 
 /* Section Titles */
