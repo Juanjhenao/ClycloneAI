@@ -118,6 +118,8 @@ nav ul li a {
     text-decoration: none;
     font-size: 0.9em;
     font-weight: 500;
+    transition: color 0.6s ease;
+    
 }
 
 nav ul li.current a,
@@ -291,7 +293,7 @@ nav ul li a:hover {
 }
 
 .article-card {
-    background: #000000; /* Fondo oscuro para la tarjeta */
+    background: #000000be; /* Fondo oscuro para la tarjeta */
     color: #ffffff; /* Texto blanco */
     max-width: 900px;
     padding: 20px;
@@ -303,6 +305,66 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
 }
+
+
+/* Estilos de las flechas */
+.arrow {
+    position: relative; /* Cambiado de absolute a relative para integrarse mejor en tu diseño */
+    cursor: pointer;
+    display: inline-block; /* Permite que las flechas se coloquen junto a otros elementos si es necesario */
+    transform: rotate(0deg); /* Ajusta según la orientación deseada */
+    padding-top: 35px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease;
+
+}
+
+
+
+.arrow:active {
+    transform: translateX(0) translateY(0) scale(0.8);
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+.arrow-black span {
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
 
 .article-card img {
     max-width: 100%;
